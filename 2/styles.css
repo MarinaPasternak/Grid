@@ -1,0 +1,60 @@
+body
+{
+    background-color:rgb(5, 11, 70);
+    font-size: 16pt;
+    margin:0;
+    color:white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.grid-block div
+{
+    background-color:rgb(26, 31, 82);
+    width:fit-content;
+    height: fit-content;
+    border-radius: 20px;
+}
+.grid-block
+{
+    display: grid;
+    
+    grid-template-columns: repeat(6, 200px);
+   border-color: white;
+   border: solid;
+   width: 100%;
+   grid-gap: 10px;
+   border-width:10px;
+   grid-template-areas: 
+    “persent textS textS chat calls”
+    “persent miseedCalls agentStatus chat calls”
+    “persent macros breadchead tickets”;
+}
+
+nav li
+{list-style-type: none;
+    float: right;
+}
+    
+td:nth-child(1) {
+    padding-right:120px;
+    
+} 
+td{
+    color:rgb(86, 88, 136);
+    border-bottom: 1px solid rgb(86, 88, 136);
+    
+}
+table{border-collapse: collapse;}
+.huge-nabber
+{
+    font-size: 3em;
+}
+
+#persent{grid-area:persent;} 
+#textS{grid-area:textS;} 
+#chat{grid-area:chat;}
+#miseedCalls{grid-area:miseedCalls;} 
+#agentStatus{grid-area:agentStatus;}
+#macros{grid-area:macros;} 
+#breadchead{grid-area:breadchead;} 
+#tickets{grid-area:tickets;}
+#calls{grid-area:calls;}
